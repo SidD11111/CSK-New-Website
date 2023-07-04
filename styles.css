@@ -1,0 +1,246 @@
+@font-face {
+  font-family: brandFont;
+  src: url(https://api.compscikids.net/font);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header {
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 10px;
+  /* position: fixed; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-links li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: 600;
+  font-family: brandFont;
+  font-size: 24px
+}
+
+.hero {
+  background-color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0066ff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0044cc;
+}
+
+section {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  font-size: 80px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: brandFont;
+}
+
+.text {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.about-image,
+.program-image,
+.team-image {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Neumorphic styles */
+.container {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  background-color: #ff3333;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+  background-color: #ff0000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5), inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+textarea{
+  margin-top: 1px
+}
+
+/* Color scheme */
+body {
+  --color-secondary: #0066ff; /* Blue */
+  --color-primary: red; /* Red */
+  --color-accent: #fff; /* Background color */
+  --color-text: #333; /* Text color */
+  --color-text2: #4780dc;
+}
+
+header {
+  background-color: var(--color-accent);
+}
+
+.nav-links li a {
+  color: var(--color-text);
+}
+
+.logo {
+  /* color: rgb(204, 0, 0); */
+  font-family: brandFont;
+}
+
+/* .hero {
+  background-color: var(--color-accent);
+} */
+
+.hero h2 {
+  color: var(--color-text);
+}
+
+.btn,
+.btn:hover {
+  background-color: var(--color-secondary);
+}
+/* 
+section {
+  background-color: var(--color-accent);
+} */
+
+section h2 {
+  color: var(--color-text2);
+  font-family: brandFont;
+  font-size: 55px
+}
+
+section h1 {
+  color: var(--color-text);
+}
+
+#image-avatar {
+  height: 7.5%;
+  width: 7.5%;
+  left: 0
+}
+
+#image-avatar img{
+  height: 100%;
+  width: 100%;
+  /* right: 0 */
+}
+
+nav{
+  overflow:hidden;
+  border-bottom: solid #333;
+}
