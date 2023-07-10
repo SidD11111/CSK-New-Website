@@ -131,7 +131,7 @@ section h1 {
   width: 100%;
   max-width: 500px;
   max-height: 500px;
-  border-radius: 20px ;
+  border-radius: 20px;
 }
 .about-container2 {
   display: flex;
@@ -142,9 +142,39 @@ section h1 {
 .about-textStyle {
   margin-bottom: 0px;
   margin-left: 45px;
-  margin-right: 45px;
-  font-size: 18px;
+  margin-right: 15px;
+  font-size: 16px;
   width: 100%;
+}
+
+.ourTeamImage {
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 20px;
+}
+
+.ourTeamRow {
+  /* background-color: #96beff; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.ourTeamMember {
+  /* background-color: #bcd6ff; */
+}
+
+.teamText1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #777;
+  margin-top: 10px;
+}
+.teamText2 {
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
 }
 
 footer {
