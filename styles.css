@@ -120,7 +120,25 @@ section h1 {
   margin-bottom: 40px;
 }
 
-.about-image,
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px ;
+}
+.about-container2 {
+  display: flex;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.about-textStyle {
+  margin-bottom: 0px;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 18px;
+  width: 100%;
+}
 .program-image,
 .team-image {
   width: 100%;
