@@ -35,6 +35,8 @@
       <img id="circle6" src="assets/images/Avatar.png" width="460" height="345">
       <img id="circle7" src="assets/images/Avatar.png" width="460" height="345">
       <img id="circle8" src="assets/images/Avatar.png" width="460" height="345">
+      <img id="circle9" src="assets/images/logo.png" width="460" height="345">
+      <img id="circle10" src="assets/images/Avatar.png" width="460" height="345">
 
     </ul>
     
@@ -51,8 +53,7 @@
         <h2>About Us</h2>
         <div class="about-container2">
           <img class="about-image" src="./assets/images/banner2.jpg" alt="About Image">
-          <p class="text about-textStyle">After completing the course rigor of high school Computer Science, we realized how much we would have benefited from exposure to the subject in previous years and decided to start a non-profit to do just that. Held at Conant High School, CompSci Kids allows elementary and junior high students to have a background in computer science before high school. The hope is to cultivate within these students a passion for learning and logical thought that will greatly benefit them in the future. Through the use of online programs, fun activities, and exciting projects, CompSci Kids provides an enticing venue for students to learn about computer science!
-          </p>
+          <p class="text about-textStyle" id = "aboutText"></p>
         </div>
       </div>
     </section>
@@ -74,7 +75,7 @@
 
                     <div class = "descriptionSection">
                         <h1 class = "level-name">1st - 2nd</h1>
-                        <p class = "descriptionParagraph">Since these students are just getting exposed to the world of computer science, our focus begins with 'unplugged' activities prior to working with computers. We try to expose the students to computer science through activities with major underlying concepts of computer science. Students will also be show basic block programming. This is a great way to apply what they have learned in the unplugged activities. Our true objective is for the kids to have fun and want to learn more.</p>
+                        <p class = "descriptionParagraph" id = "12Text"></p>
                     </div>
                 </div>
                 <a href="#carousel__slide4"
@@ -94,7 +95,7 @@
 
                     <div class = "descriptionSection">
                         <h1 class = "level-name">3rd - 4th</h1>
-                        <p class = "descriptionParagraph">This curriculum will begin by building key computer science skills through unplugged activities designed for algorithm development. These activities will also touch on a variety of other CS concepts. Students will also explore block programming. We use a block programming system called Tynker. The programming is designed to be easy enough to learn for those that have never programmed before and also challenging enough for those that have done a bunch of block programming before.</p>
+                        <p class = "descriptionParagraph" id = "34Text"></p>
                     </div>
                 </div>
               <a href="#carousel__slide1"
@@ -113,7 +114,7 @@
 
                     <div class = "descriptionSection">
                         <h1 class = "level-name">5th - 6th</h1>
-                        <p class = "descriptionParagraph">The curriculum is designed to introduce kids to the fundamental concepts of computer science and how these concepts come together to make functioning programs. Students are encouraged to start with unplugged activities to teach basic computer science concepts. Then they will transition to challenging block programming. It is great for beginners, but will still have many activities that will challenge even those that have programmed for years. We use a system created by MIT that allows kids to explore coding on an Android tablet.</p>
+                        <p class = "descriptionParagraph" id = "56Text"></p>
                     </div>
                 </div>
               <a href="#carousel__slide2"
@@ -132,10 +133,9 @@
 
                     <div class = "descriptionSection">
                         <h1 class = "level-name">7th - 8th</h1>
-                        <p class = "descriptionParagraph">As students prepare to enter high school, they are already experienced in the use of electronics and computers. We still encourage the use of unplugged activities to teach computer science ideas, just as we do in the high school classroom. At this level, a mix of block coding and typing in JavaScript is used. This allows beginners to be challenged but have success. It also allows those that have coded for a long time to advance to the next level.. This will truly get kids ready to experience computer science at the high school level. It will also make it much easier to access the great number of tutorials available on the internet that teach coding.</p>
+                        <p class = "descriptionParagraph" id = "78Text"></p>
                     </div>
                 </div>
-                <p>hello</p>
               </div>
               <a href="#carousel__slide3"
                 class="carousel__prev">Go to previous slide</a>
@@ -203,6 +203,41 @@
   <footer>
     <p>&copy; 2023 CompSci Kids! All rights reserved.</p>
   </footer>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script>
+    console.log('hello')
+    $.ajax({
+      url: "https://api.compscikids.net/websiteText",
+      headers: { 'School': "chs" },
+      type: "GET",
+      processData: false,
+      success: function (result) {
+        result.forEach(r => {
+          if(r.key == "videoLink"){
+            if(r.value != ""){
+              var queryParamsString = r.value.split("?")[1]
+              var queryVariables = queryParamsString.split("&")
+              for(i = 0; i < queryVariables.length; i++){
+                if(queryVariables[i].charAt(0) == "v"){
+                  var vidID = queryVariables[i].split("=")[1]
+                  var link = "https://www.youtube.com/embed/" + vidID
+                  var frame = document.getElementById("video-frame")
+                  frame.src = link
+                  frame.style.display = "block"
+                  break
+                }
+              }
+            }
+          }else if (document.getElementById(r.key + "Text")){
+            document.getElementById(r.key + "Text").innerHTML = r.value
+          }
+        })
+      }
+    })
+  </script>
 </body>
+
+
 
 </html>
