@@ -28,7 +28,7 @@ class Session extends React.Component {
         var calendar = e(Calendar, { dates: this.props.Dates })
         var calendarContainer = e("div", {
             style: {
-                backgroundColor: "white"
+                backgroundColor: "f8f8f8"
             }
         }, calendar)
 
