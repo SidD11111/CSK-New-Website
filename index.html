@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="background.css">
   <link rel="stylesheet" type="text/css" href="carousel.css">
+  <link rel="stylesheet" href="calendar.css">
+
 </head>
 
 <body>
   <!-- <header> -->
-    <nav>
+    <!-- <nav>
       <div id="image-avatar"><img src="./assets/images/Avatar.png" alt="" /></div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -20,7 +22,7 @@
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
   <!-- </header> -->
 
   <main>
@@ -177,13 +179,53 @@
       </div>
     </section>
 
-    <section id="team">
+    <section id="register">
       <div class="container">
         <h2>Register</h2>
         <p class="text">text here</p>
-        <img class="team-image" src="placeholder-image.jpg" alt="Team Image">
+
+
+        <div class="container">
+          <div class="features" id="registration-container">
+            <!-- <article>
+                <a class="image">
+                  <div id="calendarContainer" style="background-color: white"></div>
+                </a>
+                <div class="inner">
+                  <div class="col-12">
+                    <ul class="actions">
+                      <li><input type="submit" class="primary" value="Register for grades 1-3"
+                          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdhgEED3gHbBViDrxURmtYNjubUPmP44-Wwgh0bT07mxfXTtg/viewform?usp=sf_link','_blank')"
+                          disabled>
+                        <p class="filledReminder">*Session closed</p>
+                      </li>
+                      <li><input type="submit" class="primary" value="Register for grades 4-6"
+                          onclick="window.open( 'https://docs.google.com/forms/d/e/1FAIpQLSeMEJfDgbfkQfGB0UVmUHk0A6Y-u2MD1Th-Mw7SnY8VwlJinw/viewform?usp=sf_link', '_blank')"
+                          disabled>
+                        <p class="filledReminder">*Session closed</p>
+                      </li>
+                      <li><input type="submit" class="primary" value="Register for grades 7-8"
+                          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfE07Aey2HMJE-uTIT_OSKMZbzCZN4sF3mcsXYMvPskaUgvpA/viewform?usp=sf_link', '_blank')"
+                          disabled>
+                        <p class="filledReminder">*Session closed</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article> -->
+          </div>
+        </div>
+
       </div>
     </section>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script>
+     const e = React.createElement
+    </script>
+    <script src="Calendar.js"></script>
+    <script src="Session.js"></script>
 
     <section id="contact">
       <div class="container">
@@ -205,6 +247,41 @@
   </footer>
 
   <script src="assets/js/jquery.min.js"></script>
+
+  <script>
+
+//UPDATED as of 1/11/2021: No need for this. Instead, registration will take place through parents.compscikids.net
+//for now, we will display the calendar
+$.ajax({
+ url: 'https://api.compscikids.net/session?filter=active',
+ headers: { 'School': 'chs' },
+ type: 'GET',
+ processData: false,
+ success: function (result) {
+  const container = document.getElementById("registration-container")
+  let elements = []
+  for (i = 0; i < result.length; i++) {
+   var eLearn = result[i].ELearn
+   elements.push(e(Session, {
+    Name: result[i].Name,
+    Dates: result[i].Dates,
+    Sections: result[i].Sections,
+    Advanced: result[i].Advanced,
+    Display: result[i].Display,
+    Open: result[i].Open,
+    OpenDate: result[i].OpenDate,
+    Registrations: result[i].Registrations,
+    Capacity: result[i].Capacity,
+    Time: eLearn == 0 ? result[i].time : "",
+    ELearn: eLearn,
+    key: i
+   }))
+  }
+  ReactDOM.render(elements, container)
+ }
+});
+
+</script> 
   <script>
     console.log('hello')
     $.ajax({
