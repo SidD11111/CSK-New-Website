@@ -305,3 +305,6 @@ nav{
   /* margin-bottom: 100px */
 }
 
+.navlink{
+  border-bottom: none;
+}
