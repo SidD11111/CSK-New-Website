@@ -3,7 +3,7 @@
   src: url(https://api.compscikids.net/font);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: transparent;
 }
 
@@ -27,7 +27,6 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .logo {
@@ -45,7 +44,7 @@ header {
   color: #f8f8f8;
   font-weight: 600;
   font-family: brandFont;
-  font-size: 24px
+  font-size: 24px;
 }
 
 #hero {
@@ -66,7 +65,6 @@ header {
   margin-top: 10vh;
   position: sticky;
   z-index: 10000;
-
 }
 
 .hero h1 {
@@ -113,7 +111,7 @@ section h1 {
   margin-bottom: 20px;
   font-family: brandFont;
   position: sticky;
-  z-index: 0
+  z-index: 0;
 }
 
 .text {
@@ -133,7 +131,7 @@ section h1 {
   width: 100%;
   max-width: 500px;
   max-height: 500px;
-  border-radius: 20px ;
+  border-radius: 20px;
 }
 .about-container2 {
   display: flex;
@@ -147,7 +145,26 @@ section h1 {
   margin-right: 15px;
   font-size: 16px;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.registerButton {
+  background-color: red;
+  cursor: pointer;
+  border-radius: 15;
+  padding-left: 20;
+  padding-right: 20;
+  padding-top: 10;
+  padding-bottom: 10;
+}
+
+.registerButtonText {
+  font-size: 20;
+  font-weight: 500;
+}
+
+.pointer-cursor {
+  cursor: pointer;
 }
 
 .ourTeamImage {
@@ -191,14 +208,16 @@ footer p {
 .container {
   background-color: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
 }
 
 .btn {
   background-color: #ff3333;
   color: #fff;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
 }
 
 .btn:hover {
@@ -213,18 +232,22 @@ textarea {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5), inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
-textarea{
-  margin-top: 1px
+textarea {
+  margin-top: 1px;
 }
 
 /* Color scheme */
@@ -261,7 +284,7 @@ header {
 section h2 {
   color: var(--color-text2);
   font-family: brandFont;
-  font-size: 55px
+  font-size: 55px;
 }
 
 section h1 {
@@ -271,17 +294,17 @@ section h1 {
 #image-avatar {
   height: 7.5%;
   width: 7.5%;
-  left: 0
+  left: 0;
 }
 
-#image-avatar img{
+#image-avatar img {
   height: 100%;
   width: 100%;
   /* right: 0 */
 }
 
-nav{
-  overflow:hidden;
+nav {
+  overflow: hidden;
   border-bottom: solid #333;
   background-color: rgba(3, 28, 109, 0.8);
   position: fixed;
@@ -291,7 +314,7 @@ nav{
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
+
   width: 100%;
   display: flex;
   align-items: center;
