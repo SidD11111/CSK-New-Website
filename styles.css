@@ -148,14 +148,38 @@ section h1 {
   font-size: 16px;
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  /* width: 80%; */
 }
 
-.ourTeamImage {
-  width: 100%;
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 20px;
+.about-textdiv {
+  width: 40%;
 }
+
+.slideshow {
+  height: 292px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  margin-bottom: 11px;
+}
+
+.mac-image {
+  background-image: url("./assets/images/slideshow/macbook.png");
+  /* background-color: #0044cc; */
+  height: 350px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-mac {
+  width: 400px;
+}
+
 
 .ourTeamRow {
   /* background-color: #96beff; */
@@ -168,12 +192,11 @@ section h1 {
   font-weight: 700;
   font-size: 20px;
   color: #777;
-  margin-top: 10px;
 }
+
 .teamText2 {
   font-size: 16px;
   color: #777;
-  margin-top: 20px;
 }
 
 footer {
@@ -300,11 +323,18 @@ nav{
   padding-left: 10px;
   overflow: hidden;
 
-  z-index: 1000;
+  z-index: 100000;
 
   /* margin-bottom: 100px */
 }
 
 .navlink{
   border-bottom: none;
+}
+
+.face {
+  width: 12.5vw;
+  height: 12.5vw;
+  object-fit:cover;
+  border-radius: 10%;
 }

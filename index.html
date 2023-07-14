@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="background.css">
   <link rel="stylesheet" type="text/css" href="carousel.css">
   <link rel="stylesheet" href="calendar.css">
-
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="32x32" />
 </head>
 
 <body>
@@ -18,9 +19,9 @@
       <div id="image-avatar"><img src="./assets/images/Avatar.png" alt="" /></div>
       <ul class="nav-links">
         <li><a class = 'navlink' href="#about">About</a></li>
-        <li><a class = 'navlink' href="#programs">Programs</a></li>
+        <li><a class = 'navlink' href="#register">Register</a></li>
+        <li><a class = 'navlink' href="#programs">The Kids</a></li>
         <li><a class = 'navlink' href="#team">Team</a></li>
-        <li><a class = 'navlink' href="#contact">Contact</a></li>
       </ul>
     </nav>
   <!-- </header> -->
@@ -54,11 +55,60 @@
       <div class="container">
         <h2>About Us</h2>
         <div class="about-container2">
-          <img class="about-image" src="./assets/images/banner2.jpg" alt="About Image">
+          <!-- <img class="about-image" src="./assets/images/banner2.jpg" alt="About Image"> -->
+          <div id="image-mac" class="mac-image">
+          
+            <div class="slideshow">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(1).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(2).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(3).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(4).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(5).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(6).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(7).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(8).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(9).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(10).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(11).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(12).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(13).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(14).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(15).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(16).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(17).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(18).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(19).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(20).JPG" style="width:100%" , height="100%">
+              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(21).JPG" style="width:100%" , height="100%">
+
+            </div>
+          
+          </div>
+          <div class="about-textdiv">
           <p class="text about-textStyle" id = "aboutText"></p>
+          </div>
         </div>
       </div>
     </section>
+
+    <section id="register">
+      <div class="container">
+        <h2>Register</h2>
+        <p class="text">text here</p>
+        <div class="container">
+          <div class="features" id="registration-container">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script>
+     const e = React.createElement
+    </script>
+    <script src="Calendar.js"></script>
+    <script src="Session.js"></script>
 
     <section id="programs">
       <div class="container">
@@ -156,22 +206,19 @@
         <h2>Our Team</h2>
         <div class="ourTeamRow">
           <div class="ourTeamMember">
-            <img class="ourTeamImage" src="assets/images/anjali.png" alt="Team Image">
-            <p class="teamText1">President</p>
-            <p class="teamText2">Anjali Vasishth</p>
+            <img class="face" src="assets/images/people/anjali.png" alt="Team Image">
+            <p align="center"><b class  = 'teamText1'>President</b><br class  = 'teamText2'>Anjali Vasishth</p>
           </div>  
           <div>
-            <img class="ourTeamImage" src="assets/images/vps.jpg" alt="Team Image">
-            <p class="teamText1">Vice Presidents</p>
-            <p class="teamText2">Mehr Bhatia & Siya Choudhary</p>
+            <img class="face" src="assets/images/people/vps.jpg" alt="Team Image">
+            <p align="center"><b class  = 'teamText1'>Vice Presidents</b><br class  = 'teamText2'>Mehr Bhatia & Siya Choudhary</p>
           </div>
           <div>
-            <img class="ourTeamImage" src="assets/images/sid.png" alt="Team Image">
-            <p class="teamText1">Head of Tech</p>
-            <p class="teamText2">Sid Dayaneni</p>
+            <img class="face" src="assets/images/people/sid.png" alt="Team Image">
+            <p align="center"><b class  = 'teamText1'>Head of Tech</b><br class  = 'teamText2'>Sid Dayaneni</p>
           </div>
           <div>
-            <img class="ourTeamImage" src="assets/images/board.jpg" alt="Team Image">
+            <img class="face" src="assets/images/people/board.jpg" alt="Team Image">
             <p class="teamText1">CSK Board</p>
             <!-- <p class="teamText2">Text Here</p> -->
           </div>
@@ -179,55 +226,7 @@
       </div>
     </section>
 
-    <section id="register">
-      <div class="container">
-        <h2>Register</h2>
-        <p class="text">text here</p>
-
-
-        <div class="container">
-          <div class="features" id="registration-container">
-            <!-- <article>
-                <a class="image">
-                  <div id="calendarContainer" style="background-color: white"></div>
-                </a>
-                <div class="inner">
-                  <div class="col-12">
-                    <ul class="actions">
-                      <li><input type="submit" class="primary" value="Register for grades 1-3"
-                          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdhgEED3gHbBViDrxURmtYNjubUPmP44-Wwgh0bT07mxfXTtg/viewform?usp=sf_link','_blank')"
-                          disabled>
-                        <p class="filledReminder">*Session closed</p>
-                      </li>
-                      <li><input type="submit" class="primary" value="Register for grades 4-6"
-                          onclick="window.open( 'https://docs.google.com/forms/d/e/1FAIpQLSeMEJfDgbfkQfGB0UVmUHk0A6Y-u2MD1Th-Mw7SnY8VwlJinw/viewform?usp=sf_link', '_blank')"
-                          disabled>
-                        <p class="filledReminder">*Session closed</p>
-                      </li>
-                      <li><input type="submit" class="primary" value="Register for grades 7-8"
-                          onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfE07Aey2HMJE-uTIT_OSKMZbzCZN4sF3mcsXYMvPskaUgvpA/viewform?usp=sf_link', '_blank')"
-                          disabled>
-                        <p class="filledReminder">*Session closed</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article> -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script>
-     const e = React.createElement
-    </script>
-    <script src="Calendar.js"></script>
-    <script src="Session.js"></script>
-
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="container">
         <h2>Contact Us</h2>
         <p class="text">text here</p>
@@ -238,7 +237,7 @@
           <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
-    </section>
+    </section> -->
 
   </main>
 
@@ -315,6 +314,24 @@ $.ajax({
   </script>
 </body>
 
+  <script>
+    // https://www.w3schools.com/w3css/w3css_slideshow.asp
+    var slideIndex = 0;
+    carousel();
 
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {
+        slideIndex = 1;
+      }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+  </script>
 
 </html>
