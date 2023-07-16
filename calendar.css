@@ -16,7 +16,9 @@
         display: inline-block;
         padding-right: 2.5em;
         vertical-align: middle;
-        width: 50%;
+		left: 10%;
+        width: 35%;
+		
     }
 
         .features article .image img {
@@ -342,6 +344,7 @@ table {
 		margin: 0 0 2.25em 0;
 		padding-right: 0;
 		width: 100%;
+		left: 0%
 	}
 
 	.features article .inner {
