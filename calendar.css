@@ -16,7 +16,7 @@
         display: inline-block;
         padding-right: 2.5em;
         vertical-align: middle;
-        width: 33%;
+        width: 50%;
     }
 
         .features article .image img {
@@ -34,6 +34,11 @@
             margin-bottom: 0;
         }
 
+
+
+.keyText {
+	color:#ff0000
+}
 /* Table */
 
 .table-wrapper {
