@@ -59,7 +59,7 @@ class Session extends React.Component {
 
         var children = []
         var input = e("input", { type: "submit", disabled: !this.props.Open, className: "primary", value: "Register your child!", onClick: () => window.location.href='http://parents.compscikids.net/' })
-        children.push(input)
+        // children.push(input)
 
         var listItem = e("li", {}, children)
         registerButtons.push(listItem)
