@@ -222,6 +222,7 @@ footer p {
   color: #fff;
   border-radius: 30px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  --color-secondary: #ff3333; 
 }
 
 .btn:hover {

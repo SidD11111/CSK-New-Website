@@ -3,7 +3,7 @@
 
 .features article {
 	border-top: solid 3px #f4f4f4;
-	margin-bottom: 2.25em;
+	margin-bottom: 0.25em;
 	padding-top: 2.25em;
 }
 
@@ -39,7 +39,11 @@
 
 
 .keyText {
-	color: #ff0000
+	color: #ff0000;
+}
+
+.regTextDiv {
+	margin-top: 1.25em;
 }
 
 /* Table */
