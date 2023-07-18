@@ -369,7 +369,6 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-right: 20px;
   padding-left: 10px;
   overflow: hidden;
@@ -385,6 +384,11 @@ nav {
 
 .nav-links li a {
   color: var(--color-accent);
+}
+
+.navLogo {
+  display: block;
+  margin-right: 69%;
 }
 
 
@@ -455,7 +459,7 @@ nav {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 150px;
+  width: 175px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -463,6 +467,7 @@ nav {
   background-color: rgba(53, 73, 138);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+  text-align: center;
 }
 
 .menu__item {
@@ -480,32 +485,27 @@ nav {
   background-color: #CFD8DC;
 }
 
-.hamburger-menu {
-  overflow: hidden;
-  border-bottom: solid #333;
-  background-color: rgba(3, 28, 109, 0.8);
-  position: fixed;
-  /* height: 9vh */
-  padding-top: 10px;
-  /* padding-bottom: 20px; */
-  padding-left: 0px;
-  padding-right: 0px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
-  padding-left: 10px;
-  overflow: hidden;
-
-  z-index: 100000;
-  height: 50px;
+.navText {
+  display: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
+.menuLogo {
+  width: 130px;
+  margin-left: 25px;
+  margin-top: 25;
+  margin-bottom: 30px;
+}
 
-
+.menuContactText {
+  color: white;
+  font-size: 16px;
+  /* background-color: #0066ff; */
+  margin-top: 50px;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -522,8 +522,20 @@ nav {
     background-color: rgba(53, 73, 138);
   }
 
+  .navLogo {
+    display: none;
+  }
+
+  .navText {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 2px;
+  }
+
   .menu__btn {
     display: block;
+    margin-top: 8px;
+    margin-right: 5px;
   }
 
   .hamburgerMenu {
