@@ -380,7 +380,8 @@ article {
   .container {
     /* max-width: 100%; */
     /* background-color: #0044cc; */
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 15px;
     /* background-color: #b7c8e2; */
@@ -427,7 +428,7 @@ article {
   #mainText {
     text-align: center;
     /* word-wrap: wrap; */
-    font-size: 140px;
+    font-size: 110px;
     overflow: hidden;
   }
 
@@ -440,8 +441,12 @@ article {
   }
 
   #hero {
-    padding-top: 25vh;
-    padding-left: 15vw
+    padding: 0;
+    padding-top: 10vh;
+  }
+
+  body{
+    overflow-x: hidden;
   }
 }
 
