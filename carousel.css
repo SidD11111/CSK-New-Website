@@ -296,12 +296,12 @@ ol, li {
       .carousel::before,
       .carousel__prev {
         left: 0.2rem;
-        margin-top: 50%;
+        margin-top: 19rem;
       }
 
       .carousel::after,
       .carousel__next {
-        right: -2.5rem;
-        margin-top: 50%;
+        right: -1rem;
+        margin-top: 19rem;
       }
   }
