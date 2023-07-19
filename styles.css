@@ -442,7 +442,7 @@ article {
 
   #hero {
     padding: 0;
-    padding-top: 10vh;
+    padding-top: 13vh;
   }
 
   body{
@@ -707,5 +707,30 @@ nav {
 
   .slideshow {
     display: none;
+  }
+
+  .face {
+    width: 35vw;
+    height: 35vw;
+    object-fit:cover;
+    border-radius: 10%;
+  }
+
+  .ourTeamRow{
+    flex-flow: wrap;
+  }
+
+  .teamText2{
+    font-size: 14pt;
+  }
+
+  body {
+    /* font-size: 0px; */
+    /* color: green */
+    font-size: 10pt;
+  }
+
+  .peopletext{
+    margin-bottom: 5vh
   }
 }
