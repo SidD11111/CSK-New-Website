@@ -445,7 +445,7 @@ article {
     padding-top: 10vh;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 }
@@ -488,7 +488,7 @@ nav {
   background-color: rgba(3, 28, 109, 0.8);
   position: fixed;
   /* height: 9vh */
-  padding-top: 10px;
+  padding-top: 0px;
   /* padding-bottom: 20px; */
   padding-left: 0px;
   padding-right: 0px;
@@ -497,7 +497,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-left: 10px;
   overflow: hidden;
 
@@ -514,9 +514,41 @@ nav {
   color: var(--color-accent);
 }
 
+.nav-links {
+  /* background-color: #777; */
+  width: 100%;
+  text-align: right;
+}
+
 .navLogo {
+  /* background-color: rgb(106, 26, 102); */
+}
+
+.testing111 {
+  /* background-color: rgb(0, 255, 136); */
+  /* max-width: "10%"; */
+  width: 55%;
+}
+
+.testing12 {
+  width: 45%;
+  justify-content: right;
+  /* background-color: #fff; */
+  text-align: right;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  justify-content: left;
+  align-items: center;
+}
+
+.navLogoDiv {
+  /* background-color: aqua; */
   display: block;
-  margin-right: 69%;
+  /* width: fit-content; */
 }
 
 
