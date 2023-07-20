@@ -31,6 +31,11 @@ header {
 
 }
 
+
+html {
+	scroll-behavior: smooth;
+}
+
 .logo {
   font-size: 24px;
   color: #333;
