@@ -33,7 +33,7 @@ header {
 
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -227,6 +227,27 @@ footer p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
   position: sticky;
   z-index: 10000;
+}
+
+.leftContainer {
+  width: 600px;
+  max-width: 600px;
+  margin-right: 20px;
+  height: 700px;
+}
+
+.rightContainer {
+  width: 600px;
+  max-width: 600px;
+  margin-left: 20px;
+  height: 700px;
+}
+
+.testing123 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -749,15 +770,15 @@ nav {
   .face {
     width: 35vw;
     height: 35vw;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 10%;
   }
 
-  .ourTeamRow{
+  .ourTeamRow {
     flex-flow: wrap;
   }
 
-  .teamText2{
+  .teamText2 {
     font-size: 14pt;
   }
 
@@ -767,7 +788,7 @@ nav {
     font-size: 10pt;
   }
 
-  .peopletext{
+  .peopletext {
     margin-bottom: 5vh
   }
 }
