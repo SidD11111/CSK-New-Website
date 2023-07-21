@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="background.css">
   <link rel="stylesheet" type="text/css" href="carousel.css">
+  <link rel="stylesheet" type="text/css" href="laptop.css">
   <link rel="stylesheet" href="calendar.css">
   <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
@@ -17,35 +17,33 @@
 <body>
   <!-- <header> -->
   <nav>
-    <div class="navContainer">
-      <div class="testing111">
-        <div class="navLogo" id="image-avatar">
-          <img src="./assets/images/Avatar.png" alt="" />
-        </div>
-      </div>
-      <div class="testing12">
-        <ul class="nav-links">
-          <li><a class='navlink' href="#about">About</a></li>
-          <li><a class='navlink' href="#register">Register</a></li>
-          <li><a class='navlink' href="#programs">The Kids</a></li>
-          <li><a class='navlink' href="#team">Team</a></li>
-        </ul>
-      </div>
+    <div id = 'desktopNavDiv'>
+      <div class="navLogo" id="image-avatar"><img src="./assets/images/Avatar.png" alt="" /></div>
+      <ul class="nav-links">
+        <li><a class='navlink' href="#about">About</a></li>
+        <li><a class='navlink' href="#register">Register</a></li>
+        <li><a class='navlink' href="#programs">The Kids</a></li>
+        <li><a class='navlink' href="#team">Team</a></li>
+      </ul>
     </div>
-    <p class="navText">CompSci Kids!</p>
 
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
-    <ul class="menu__box">
-      <img class="menuLogo" src="./assets/images/Avatar.png" alt="" />
-      <li><a class="menu__item" href="#about">About</a></li>
-      <li><a class="menu__item" href="#register">Register</a></li>
-      <li><a class="menu__item" href="#programs">The Kids</a></li>
-      <li><a class="menu__item" href="#team">Team</a></li>
-      <p class="menuContactText">Contact us at: cskids211@gmail.com</p>
-    </ul>
+    <div id = #mobileNavDiv>
+      <p class="navText">CompSci Kids!</p>
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <img class="menuLogo" src="./assets/images/Avatar.png" alt="" />
+        <li><a class="menu__item" href="#about">About</a></li>
+        <li><a class="menu__item" href="#register">Register</a></li>
+        <li><a class="menu__item" href="#programs">The Kids</a></li>
+        <li><a class="menu__item" href="#team">Team</a></li>
+        <p class="menuContactText">Contact us at: cskids211@gmail.com</p>
+      </ul>
+    </div>
+
+
   </nav>
   <!-- </header> -->
 
@@ -75,66 +73,51 @@
     </section>
 
     <section id="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <div class="about-container2">
-          <!-- <img class="about-image" src="./assets/images/banner2.jpg" alt="About Image"> -->
-          <div id="image-mac" class="mac-image">
-
-            <div class="slideshow">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(1).JPG" style="width:100.5%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(2).JPG" style="width:100.5%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(3).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(4).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(5).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(6).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(7).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(8).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(9).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(10).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(11).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(12).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(13).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(14).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(15).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(16).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(17).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(18).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(19).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(20).JPG" style="width:100%" ,
-                height="100%">
-              <img class="mySlides w3-animate-fading" src="./assets/images/slideshow/(21).JPG" style="width:100%" ,
-                height="100%">
-
-            </div>
-
-          </div>
-          <div class="about-textdiv">
-            <p class="text about-textStyle" id="aboutText"></p>
-            <img class="aboutUsImg" src="./assets/images/slideshow/(1).JPG" style="width:100%" ,height="100%">
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="container" id = 'about-container'>
+        <h2 id = "h2about">About Us</h2>
+                <div class="about-container2">
+                  <div id="image-mac" class="mac-image">
+        
+                    <section class="carouselLaptop" aria-label="Gallery">
+                      <ol class="carousel__viewportLaptop">
+                        <li id="carousel__slide1Laptop"
+                            tabindex="0"
+                            class="carousel__slideLaptop"
+                            >
+                            <img src="assets\images\slideshow\(1).JPG" alt="Flowers in Chania" style="max-width: 100%; height: 100%;">
+                            <div class="carousel__snapperLaptop"></div>
+                        </li>
+                        <li id="carousel__slide2Laptop"
+                            tabindex="0"
+                            class="carousel__slideLaptop">
+                            <img src="assets\images\slideshow\(3).JPG" alt="Flowers in Chania" style="max-width: 100%;">
+                          <div class="carousel__snapperLaptop"></div>
+                        </li>
+                        <li id="carousel__slide3Laptop"
+                            tabindex="0"
+                            class="carousel__slideLaptop">
+                            <img src="assets\images\slideshow\(18).JPG" alt="Flowers in Chania" style="max-width: 100%;">
+                          <div class="carousel__snapperLaptop"></div>
+                        </li>
+                        <li id="carousel__slide4Laptop"
+                            tabindex="0"
+                            class="carousel__slideLaptop">
+                            <img src="assets\images\slideshow\(2).JPG" alt="Flowers in Chania" style="max-width: 100%;">
+                          <div class="carousel__snapperLaptop"></div>
+                        </li>
+                      </ol>
+        
+                    </section>
+        
+                  </div>
+        
+                  <div class="about-textdiv">
+                    <p class="text about-textStyle" id="aboutText"></p>
+                    <img class="aboutUsImg" src="./assets/images/slideshow/(1).JPG" style="width:100%" ,height="100%">
+                  </div>
+                </div>
+              </div>
+            </section>
 
     <section id="register">
       <div class="container">
@@ -347,25 +330,5 @@
     })
   </script>
 </body>
-
-<script>
-  // https://www.w3schools.com/w3css/w3css_slideshow.asp
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {
-      slideIndex = 1;
-    }
-    x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
-  }
-</script>
 
 </html>
