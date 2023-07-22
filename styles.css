@@ -33,7 +33,7 @@ header {
 
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -637,13 +637,14 @@ nav {
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 20px 24px;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: brandFont;
+  font-size: 28px;
+  font-weight: 500;
   text-decoration: none;
   transition-duration: .25s;
+  border-bottom-color: transparent;
 }
 
 .menu__item:hover {
@@ -662,12 +663,12 @@ nav {
   width: 130px;
   margin-left: 25px;
   margin-top: 25;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .menuContactText {
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   /* background-color: #0066ff; */
   margin-top: 50px;
   text-align: center;
@@ -749,15 +750,15 @@ nav {
   .face {
     width: 35vw;
     height: 35vw;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 10%;
   }
 
-  .ourTeamRow{
+  .ourTeamRow {
     flex-flow: wrap;
   }
 
-  .teamText2{
+  .teamText2 {
     font-size: 14pt;
   }
 
@@ -767,7 +768,7 @@ nav {
     font-size: 10pt;
   }
 
-  .peopletext{
+  .peopletext {
     margin-bottom: 5vh
   }
 }
