@@ -36,7 +36,7 @@ header {
   color: #333;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   flex-direction: row;
 }
@@ -99,8 +99,8 @@ header {
   font-size: 14pt;
 }
 
-#desktopNavDiv{
-  overflow:hidden;
+#desktopNavDiv {
+  overflow: hidden;
   border-bottom: solid #333;
   background-color: rgba(3, 28, 109, 0.8);
   position: fixed;
@@ -110,7 +110,7 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -342,7 +342,7 @@ section h1 {
   /* right: 0 */
 }
 
-nav{
+nav {
 
   /* margin-bottom: 100px */
 }
@@ -385,8 +385,8 @@ article {
 
 
 @media (max-width: 768px) {
-  nav{
-    overflow:hidden;
+  nav {
+    overflow: hidden;
     border-bottom: solid #333;
     background-color: rgba(3, 28, 109, 0.8);
     position: fixed;
@@ -396,7 +396,7 @@ article {
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -404,11 +404,11 @@ article {
     padding-right: 20px;
     padding-left: 10px;
     overflow: hidden;
-  
+
     z-index: 100000;
   }
-  
-  #desktopNavDiv{
+
+  #desktopNavDiv {
     display: none;
     appearance: none;
   }
@@ -481,7 +481,7 @@ article {
     padding-top: 13vh;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 }
@@ -552,6 +552,7 @@ article {
 
 .menu__box {
 
+
   display: block;
   position: fixed;
   top: 0;
@@ -567,42 +568,47 @@ article {
   text-align: center;
 }
 
+
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 22px 24px;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: brandFont;
+  font-size: 28px;
+  font-weight: 500;
   text-decoration: none;
   transition-duration: .25s;
+  border-bottom-color: transparent;
 }
+
 
 .menu__item:hover {
   background-color: #CFD8DC;
 }
 
+
 .navText {
   display: none;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   font-family: brandFont;
-  appearance: none;
 }
+
 
 .menuLogo {
   width: 130px;
   margin-left: 25px;
-  margin-top: 25;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
+
 
 .menuContactText {
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   /* background-color: #0066ff; */
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -627,8 +633,8 @@ article {
 
   .navText {
     display: block;
-    margin-bottom: 10px;
-    margin-top: 2px;
+    /* margin-bottom: 10px; */
+    margin-top: 4px;
   }
 
   .menu__btn {
@@ -682,15 +688,15 @@ article {
   .face {
     width: 35vw;
     height: 35vw;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 10%;
   }
 
-  .ourTeamRow{
+  .ourTeamRow {
     flex-flow: wrap;
   }
 
-  .teamText2{
+  .teamText2 {
     font-size: 14pt;
   }
 
@@ -700,7 +706,7 @@ article {
     font-size: 10pt;
   }
 
-  .peopletext{
+  .peopletext {
     margin-bottom: 5vh
   }
 
@@ -708,11 +714,11 @@ article {
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
-#mobileNavDiv{
+#mobileNavDiv {
   appearance: none;
   display: none;
 }
