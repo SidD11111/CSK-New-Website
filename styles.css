@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 @font-face {
   font-family: brandFont;
   src: url(https://api.compscikids.net/font);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lumanosimo&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +17,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   background-color: transparent;
 }
 
@@ -36,7 +40,7 @@ header {
   color: #333;
 }
 
-.nav-links {
+.nav-links{
   display: flex;
   flex-direction: row;
 }
@@ -97,10 +101,11 @@ header {
   text-decoration: none;
   transition: background-color 0.3s ease;
   font-size: 14pt;
+  cursor: pointer;
 }
 
-#desktopNavDiv {
-  overflow: hidden;
+#desktopNavDiv{
+  overflow:hidden;
   border-bottom: solid #333;
   background-color: rgba(3, 28, 109, 0.8);
   position: fixed;
@@ -110,7 +115,7 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+  
   width: 100%;
   display: flex;
   align-items: center;
@@ -149,7 +154,7 @@ section h1 {
 
 .text {
   font-size: 16px;
-  color: #777;
+  /* color: #777; */
   margin-bottom: 40px;
 }
 
@@ -179,8 +184,12 @@ section h1 {
   margin-right: 15px;
   font-size: 16px;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   /* width: 80%; */
+}
+
+p, h3, a{
+  font-family: 'Dosis', sans-serif;
 }
 
 .about-textdiv {
@@ -220,16 +229,16 @@ section h1 {
 .teamText1 {
   font-weight: 700;
   font-size: 20px;
-  color: #777;
+  color: var(--color-text2);
 }
 
 .teamText2 {
   font-size: 16px;
-  color: #777;
+  /* color: #777; */
 }
 
 footer {
-  background-color: #333;
+  background-color: rgba(3, 28, 109, 0.8);
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -342,7 +351,7 @@ section h1 {
   /* right: 0 */
 }
 
-nav {
+nav{
 
   /* margin-bottom: 100px */
 }
@@ -385,8 +394,8 @@ article {
 
 
 @media (max-width: 768px) {
-  nav {
-    overflow: hidden;
+  nav{
+    overflow:hidden;
     border-bottom: solid #333;
     background-color: rgba(3, 28, 109, 0.8);
     position: fixed;
@@ -396,7 +405,7 @@ article {
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -404,11 +413,11 @@ article {
     padding-right: 20px;
     padding-left: 10px;
     overflow: hidden;
-
+  
     z-index: 100000;
   }
-
-  #desktopNavDiv {
+  
+  #desktopNavDiv{
     display: none;
     appearance: none;
   }
@@ -481,7 +490,7 @@ article {
     padding-top: 13vh;
   }
 
-  body {
+  body{
     overflow-x: hidden;
   }
 }
@@ -552,7 +561,6 @@ article {
 
 .menu__box {
 
-
   display: block;
   position: fixed;
   top: 0;
@@ -568,7 +576,6 @@ article {
   text-align: center;
 }
 
-
 .menu__item {
   display: block;
   padding: 22px 24px;
@@ -581,11 +588,9 @@ article {
   border-bottom-color: transparent;
 }
 
-
 .menu__item:hover {
   background-color: #CFD8DC;
 }
-
 
 .navText {
   display: none;
@@ -593,8 +598,8 @@ article {
   font-size: 24px;
   font-weight: 500;
   font-family: brandFont;
+  appearance: none;
 }
-
 
 .menuLogo {
   width: 130px;
@@ -602,7 +607,6 @@ article {
   margin-top: 25px;
   margin-bottom: 40px;
 }
-
 
 .menuContactText {
   color: white;
@@ -688,15 +692,15 @@ article {
   .face {
     width: 35vw;
     height: 35vw;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 10%;
   }
 
-  .ourTeamRow {
+  .ourTeamRow{
     flex-flow: wrap;
   }
 
-  .teamText2 {
+  .teamText2{
     font-size: 14pt;
   }
 
@@ -706,19 +710,38 @@ article {
     font-size: 10pt;
   }
 
-  .peopletext {
-    margin-bottom: 5vh
+  .peopletext{
+    margin-bottom: 5vh;
   }
 
 
 }
 
+
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 
-#mobileNavDiv {
+#mobileNavDiv{
   appearance: none;
   display: none;
+}
+
+.filledReminder{
+  display: inline;
+  margin-left: 1.25em;
+  color: var(--color-primary)
+}
+
+.navlink:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
