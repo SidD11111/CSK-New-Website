@@ -10,6 +10,10 @@
   src: url(https://api.compscikids.net/font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -196,6 +200,13 @@ p, h3, a{
   width: 40%;
 }
 
+.rightContainer {
+  width: 600px;
+  max-width: 600px;
+  margin-left: 20px;
+  height: 700px;
+}
+
 .slideshow {
   height: 292px;
   width: 75%;
@@ -352,7 +363,7 @@ section h1 {
 }
 
 nav{
-
+  overflow: hidden;
   /* margin-bottom: 100px */
 }
 
@@ -420,6 +431,7 @@ article {
   #desktopNavDiv{
     display: none;
     appearance: none;
+    overflow: hidden;
   }
 
   .container {
@@ -629,6 +641,7 @@ article {
 
   nav {
     background-color: rgba(53, 73, 138);
+    overflow: hidden
   }
 
   .navLogo {
@@ -717,15 +730,34 @@ article {
 
 }
 
+@media (min-width: 936px){
+  .leftContainer {
+    width: 600px;
+    max-width: 600px;
+    margin-right: 20px;
+    height: 700px;
+  }
 
-html {
-	scroll-behavior: smooth;
+  .rightContainer {
+    width: 600px;
+    max-width: 600px;
+    margin-left: 20px;
+    height: 700px;
+  }
+
+  .testing123 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
-
 
 #mobileNavDiv{
   appearance: none;
   display: none;
+  overflow: hidden
 }
 
 .filledReminder{
@@ -745,3 +777,32 @@ html {
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
+.copyright {
+  line-height: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+  .copyright li {
+    border-left: solid 1px #d4d4d4;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 1em;
+    padding-left: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-size: 11pt;
+  }
+
+    .copyright li:first-child {
+      border-left: 0;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .copyright li a {
+      color: inherit;
+    }
+
+  
+    

@@ -119,103 +119,97 @@
               </div>
             </section>
 
-    <section id="register">
-      <div class="container">
-        <h2>Register</h2>
-        <div>
-          <div class="features" id="registration-container">
-          </div>
-          <a class="btn" onclick="window.location.href='http://parents.compscikids.net/'">Register your child!</a>
-          <div class="regTextDiv">
-            <p>Dates marked in <b class="keyText">Red</b> are active session dates!</p>
 
+     <div class="testing123">
+      <section id="register">
+        <div class="container leftContainer">
+          <h2>Register</h2>
+          <div>
+            <div class="features" id="registration-container">
+            </div>
+            <a class="btn" onclick="window.location.href='http://parents.compscikids.net/'">Register your child!</a>
+            <div class="regTextDiv">
+              <p>Dates marked in <b class="keyText">Red</b> are active session dates!</p>
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script>
-      const e = React.createElement
-    </script>
-    <script src="Calendar.js"></script>
-    <script src="Session.js"></script>
+      <section id="programs">
+        <div class="container rightContainer">
+          <h2>The Kids</h2>
 
-    <section id="programs">
-      <div class="container">
-        <h2>The Kids</h2>
-
-        <div class="carousel" aria-label="Gallery">
-          <ol class="carousel__viewport">
+          <div class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
 
 
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <div class="level-div">
-                  <div class="levelImage" id=levelImage1></div>
+              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="level-div">
+                    <div class="levelImage" id=levelImage1></div>
 
-                  <div class="descriptionSection">
-                    <h1 class="level-name">1st - 2nd</h1>
-                    <p class="descriptionParagraph" id="12Text"></p>
+                    <div class="descriptionSection">
+                      <h1 class="level-name">1st - 2nd</h1>
+                      <p class="descriptionParagraph" id="12Text"></p>
+                    </div>
+                  </div>
+                  <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+              </li>
+
+
+              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="level-div">
+                    <div class="levelImage" id=levelImage1></div>
+
+                    <div class="descriptionSection">
+                      <h1 class="level-name">3rd - 4th</h1>
+                      <p class="descriptionParagraph" id="34Text"></p>
+                    </div>
+                  </div>
+                  <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+              </li>
+
+
+              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="level-div">
+                    <div class="levelImage" id=levelImage1></div>
+
+                    <div class="descriptionSection">
+                      <h1 class="level-name">5th - 6th</h1>
+                      <p class="descriptionParagraph" id="56Text"></p>
+                    </div>
+                  </div>
+                  <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+              </li>
+
+
+              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <div class="level-div">
+                    <div class="levelImage" id=levelImage1></div>
+
+                    <div class="descriptionSection">
+                      <h1 class="level-name">7th - 8th</h1>
+                      <p class="descriptionParagraph" id="78Text"></p>
+                    </div>
                   </div>
                 </div>
-                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-              </div>
-            </li>
-
-
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <div class="level-div">
-                  <div class="levelImage" id=levelImage1></div>
-
-                  <div class="descriptionSection">
-                    <h1 class="level-name">3rd - 4th</h1>
-                    <p class="descriptionParagraph" id="34Text"></p>
-                  </div>
-                </div>
-                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-            </li>
-
-
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <div class="level-div">
-                  <div class="levelImage" id=levelImage1></div>
-
-                  <div class="descriptionSection">
-                    <h1 class="level-name">5th - 6th</h1>
-                    <p class="descriptionParagraph" id="56Text"></p>
-                  </div>
-                </div>
-                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-            </li>
-
-
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <div class="level-div">
-                  <div class="levelImage" id=levelImage1></div>
-
-                  <div class="descriptionSection">
-                    <h1 class="level-name">7th - 8th</h1>
-                    <p class="descriptionParagraph" id="78Text"></p>
-                  </div>
-                </div>
-              </div>
-              <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-              <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-            </li>
-          </ol>
+                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+          </div>
         </div>
-      </div>
 
-
-    </section>
+      </section>
+    </div>
 
     <section id="team">
       <div class="container">
@@ -259,7 +253,10 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 CompSci Kids! All rights reserved.</p>
+    <ul class="copyright">
+      <li>&copy; CompSci Kids</li>
+      <li>Created by Sid, Sahil, Vedant, and Shreyas</li>
+    </ul>
   </footer>
 
   <script src="assets/js/jquery.min.js"></script>
@@ -329,6 +326,14 @@
       }
     })
   </script>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script>
+    const e = React.createElement
+  </script>
+  <script src="Calendar.js"></script>
+  <script src="Session.js"></script>
 </body>
 
 </html>
