@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lumanosimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lumanosimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 @font-face {
   font-family: brandFont;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   background-color: transparent;
 }
 
@@ -36,7 +36,6 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .logo {
@@ -44,7 +43,7 @@ header {
   color: #333;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   flex-direction: row;
 }
@@ -60,7 +59,7 @@ header {
   color: #f8f8f8;
   font-weight: 600;
   font-family: brandFont;
-  font-size: 24px
+  font-size: 24px;
 }
 
 #hero {
@@ -81,7 +80,6 @@ header {
   margin-top: 4vh;
   position: sticky;
   z-index: 10000;
-
 }
 
 .hero h1 {
@@ -108,8 +106,8 @@ header {
   cursor: pointer;
 }
 
-#desktopNavDiv{
-  overflow:hidden;
+#desktopNavDiv {
+  overflow: hidden;
   border-bottom: solid #333;
   background-color: rgba(3, 28, 109, 0.8);
   position: fixed;
@@ -119,7 +117,7 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -153,7 +151,7 @@ section h1 {
   margin-bottom: 20px;
   font-family: brandFont;
   position: sticky;
-  z-index: 0
+  z-index: 0;
 }
 
 .text {
@@ -188,12 +186,14 @@ section h1 {
   margin-right: 15px;
   font-size: 16px;
   width: 100%;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   /* width: 80%; */
 }
 
-p, h3, a{
-  font-family: 'Dosis', sans-serif;
+p,
+h3,
+a {
+  font-family: "Dosis", sans-serif;
 }
 
 .about-textdiv {
@@ -227,8 +227,6 @@ p, h3, a{
   align-items: center;
   padding: 10px;
 }
-
-
 
 .ourTeamRow {
   /* background-color: #96beff; */
@@ -265,7 +263,8 @@ footer p {
 .container {
   background-color: #f8f8f8;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
   position: sticky;
   z-index: 10000;
 }
@@ -274,7 +273,8 @@ footer p {
   background-color: #ff3333;
   color: #fff;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
 }
 
 .btn:hover {
@@ -289,18 +289,22 @@ textarea {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5), inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
 textarea {
-  margin-top: 1px
+  margin-top: 1px;
 }
 
 /* Color scheme */
@@ -323,7 +327,6 @@ header {
 .nav-links li a {
   color: var(--color-accent);
   display: inline-block;
-
 }
 
 .logo {
@@ -343,7 +346,7 @@ header {
 section h2 {
   color: var(--color-text2);
   font-family: brandFont;
-  font-size: 55px
+  font-size: 55px;
 }
 
 section h1 {
@@ -353,7 +356,7 @@ section h1 {
 #image-avatar {
   height: 7.5%;
   width: 7.5%;
-  left: 0
+  left: 0;
 }
 
 #image-avatar img {
@@ -362,7 +365,7 @@ section h1 {
   /* right: 0 */
 }
 
-nav{
+nav {
   overflow: hidden;
   /* margin-bottom: 100px */
 }
@@ -403,10 +406,9 @@ article {
   display: none;
 }
 
-
 @media (max-width: 768px) {
-  nav{
-    overflow:hidden;
+  nav {
+    overflow: hidden;
     border-bottom: solid #333;
     background-color: rgba(3, 28, 109, 0.8);
     position: fixed;
@@ -416,7 +418,7 @@ article {
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -424,11 +426,11 @@ article {
     padding-right: 20px;
     padding-left: 10px;
     overflow: hidden;
-  
+
     z-index: 100000;
   }
-  
-  #desktopNavDiv{
+
+  #desktopNavDiv {
     display: none;
     appearance: none;
     overflow: hidden;
@@ -465,7 +467,8 @@ article {
     display: block;
     margin-top: 25px;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+      -10px -10px 20px rgba(255, 255, 255, 0.5);
   }
 
   .mac-image {
@@ -480,7 +483,8 @@ article {
     display: none;
   }
 
-  .hero-description {}
+  .hero-description {
+  }
 
   #mainText {
     text-align: center;
@@ -502,39 +506,36 @@ article {
     padding-top: 13vh;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 }
-
 
 .hamburgerMenu {
   display: none;
   appearance: none;
 }
 
-
-
 #menu__toggle {
   opacity: 0;
   appearance: none;
 }
 
-#menu__toggle:checked+.menu__btn>span {
+#menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::before {
+#menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::after {
+#menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   right: 0 !important;
 }
 
@@ -550,29 +551,28 @@ article {
   appearance: none;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #ffffff;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
-.menu__btn>span::before {
-  content: '';
+.menu__btn > span::before {
+  content: "";
   top: -8px;
 }
 
-.menu__btn>span::after {
-  content: '';
+.menu__btn > span::after {
+  content: "";
   top: 8px;
 }
 
 .menu__box {
-
   display: block;
   position: fixed;
   top: 0;
@@ -583,8 +583,8 @@ article {
   padding: 80px 0;
   list-style: none;
   background-color: rgba(53, 73, 138);
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
   text-align: center;
 }
 
@@ -596,12 +596,12 @@ article {
   font-size: 28px;
   font-weight: 500;
   text-decoration: none;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   border-bottom-color: transparent;
 }
 
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #cfd8dc;
 }
 
 .navText {
@@ -641,7 +641,7 @@ article {
 
   nav {
     background-color: rgba(53, 73, 138);
-    overflow: hidden
+    overflow: hidden;
   }
 
   .navLogo {
@@ -666,7 +666,6 @@ article {
     max-height: 35px;
   }
 
-
   .about-textStyle {
     font-size: 14px;
     margin-left: 0;
@@ -687,7 +686,8 @@ article {
     display: block;
     margin-top: 25px;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+      -10px -10px 20px rgba(255, 255, 255, 0.5);
   }
 
   .mac-image {
@@ -705,15 +705,15 @@ article {
   .face {
     width: 35vw;
     height: 35vw;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 10%;
   }
 
-  .ourTeamRow{
+  .ourTeamRow {
     flex-flow: wrap;
   }
 
-  .teamText2{
+  .teamText2 {
     font-size: 14pt;
   }
 
@@ -723,14 +723,12 @@ article {
     font-size: 10pt;
   }
 
-  .peopletext{
+  .peopletext {
     margin-bottom: 5vh;
   }
-
-
 }
 
-@media (min-width: 936px){
+@media (min-width: 936px) {
   .leftContainer {
     width: 600px;
     max-width: 600px;
@@ -751,19 +749,18 @@ article {
     justify-content: center;
     align-items: center;
   }
-  
 }
 
-#mobileNavDiv{
+#mobileNavDiv {
   appearance: none;
   display: none;
-  overflow: hidden
+  overflow: hidden;
 }
 
-.filledReminder{
+.filledReminder {
   display: inline;
   margin-left: 1.25em;
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .navlink:hover {
@@ -771,11 +768,21 @@ article {
 }
 
 @keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .copyright {
@@ -784,25 +791,22 @@ article {
   padding: 0;
 }
 
-  .copyright li {
-    border-left: solid 1px #d4d4d4;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-left: 1em;
-    padding-left: 1em;
-    font-family: 'Dosis', sans-serif;
-    font-size: 11pt;
-  }
+.copyright li {
+  border-left: solid 1px #d4d4d4;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 1em;
+  padding-left: 1em;
+  font-family: "Dosis", sans-serif;
+  font-size: 11pt;
+}
 
-    .copyright li:first-child {
-      border-left: 0;
-      margin-left: 0;
-      padding-left: 0;
-    }
+.copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
 
-    .copyright li a {
-      color: inherit;
-    }
-
-  
-    
+.copyright li a {
+  color: inherit;
+}
