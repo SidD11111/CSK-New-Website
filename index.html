@@ -20,9 +20,9 @@
     <div id = 'desktopNavDiv'>
       <div class="navLogo" id="image-avatar"><img src="./assets/images/Avatar.png" alt="" /></div>
       <ul class="nav-links">
+        <li><a class='navlink' href="#hero">Home</a></li>
         <li><a class='navlink' href="#about">About</a></li>
         <li><a class='navlink' href="#register">Register</a></li>
-        <li><a class='navlink' href="#programs">The Kids</a></li>
         <li><a class='navlink' href="#team">Team</a></li>
       </ul>
     </div>
@@ -67,7 +67,7 @@
     <section id="hero">
       <div class="hero-content">
         <h1 id='mainText'>CompSci Kids!</h1>
-        <p class="hero-description">Introducing children to the exciting world of coding and computer science.</p>
+        <p class="hero-description">Introducing youth to the exciting world of coding and computer science.</p>
         <a href="mailto:cskids211@gmail.com" class="btn">Contact Us</a>
       </div>
     </section>
@@ -141,10 +141,10 @@
           <h2>The Kids</h2>
 
           <div class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
+            <div class="carousel__viewport">
 
 
-              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div id="carousel__slide1" tabindex="0" class="carousel__slide">
                 <div class="carousel__snapper">
                   <div class="level-div">
                     <div class="levelImage" id=levelImage1></div>
@@ -154,13 +154,13 @@
                       <p class="descriptionParagraph" id="12Text"></p>
                     </div>
                   </div>
-                  <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                  <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                  <a  class="carousel__prev one">Go to last slide</a>
+                  <a class="carousel__next two">Go to next slide</a>
                 </div>
-              </li>
+              </div>
 
 
-              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div id="carousel__slide2" tabindex="0" class="carousel__slide">
                 <div class="carousel__snapper">
                   <div class="level-div">
                     <div class="levelImage" id=levelImage1></div>
@@ -170,41 +170,44 @@
                       <p class="descriptionParagraph" id="34Text"></p>
                     </div>
                   </div>
-                  <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                  <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-              </li>
+                  <a class="carousel__prev three">Go to previous slide</a>
+                  <a class="carousel__next four">Go to next slide</a>
+              </div>
+              </div>
 
 
-              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                  <div class="level-div">
-                    <div class="levelImage" id=levelImage1></div>
+            <div id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <div class="level-div">
+                  <div class="levelImage" id=levelImage1></div>
 
-                    <div class="descriptionSection">
-                      <h1 class="level-name">5th - 6th</h1>
-                      <p class="descriptionParagraph" id="56Text"></p>
-                    </div>
-                  </div>
-                  <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                  <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-              </li>
-
-
-              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                  <div class="level-div">
-                    <div class="levelImage" id=levelImage1></div>
-
-                    <div class="descriptionSection">
-                      <h1 class="level-name">7th - 8th</h1>
-                      <p class="descriptionParagraph" id="78Text"></p>
-                    </div>
+                  <div class="descriptionSection">
+                    <h1 class="level-name">5th - 6th</h1>
+                    <p class="descriptionParagraph" id="56Text"></p>
                   </div>
                 </div>
-                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-              </li>
-            </ol>
+                <a class="carousel__prev five">Go to previous slide</a>
+                <a class="carousel__next six">Go to next slide</a>
+            </div>
+            </div>
+
+
+            <div id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <div class="level-div">
+                  <div class="levelImage" id=levelImage1></div>
+
+                  <div class="descriptionSection">
+                    <h1 class="level-name">7th - 8th</h1>
+                    <p class="descriptionParagraph" id="78Text"></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel__prev seven">Go to previous slide</a>
+              <a class="carousel__next eight">Go to first slide</a>
+            </div>
+
+          </div>
           </div>
         </div>
 
@@ -334,6 +337,7 @@
   </script>
   <script src="Calendar.js"></script>
   <script src="Session.js"></script>
+  <script src="Carousel.js"></script>
 </body>
 
 </html>
