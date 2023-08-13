@@ -125,9 +125,6 @@ header {
   z-index: 100000;
 }
 
-/* .btn:hover {
-  background-color: #0044cc;
-} */
 
 section {
   background-color: #fff;
@@ -274,7 +271,7 @@ footer p {
 }
 
 .btn:hover {
-  background-color: #ff0000;
+  background-color: rgba(14, 31, 85, 0.494);
 }
 
 input[type="text"],
@@ -334,8 +331,7 @@ header {
   color: var(--color-text);
 }
 
-.btn,
-.btn:hover {
+.btn {
   background-color: var(--color-secondary);
 }
 
