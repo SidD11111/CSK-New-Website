@@ -412,6 +412,7 @@ article {
   }
 }
 
+
 @media (max-width: 936px) {
   nav {
     overflow: hidden;
@@ -518,6 +519,19 @@ article {
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 377px) {
+  #mainText{
+    font-size: 80pt
+  }
+}
+
+@media (max-width: 320px) {
+  #mainText{
+    font-size: 70pt
+  }
+}
+
 
 .hamburgerMenu {
   display: none;
