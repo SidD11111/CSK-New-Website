@@ -153,6 +153,10 @@ section h1 {
   margin-bottom: 40px;
 }
 
+.leftContainer{
+  max-width: 590px;
+}
+
 .program-image,
 .team-image {
   width: 100%;
@@ -198,6 +202,7 @@ a {
   /* max-width: 600px; */
   margin-left: 20px;
   height: 700px;
+  max-width: 590px;
 }
 
 .slideshow {

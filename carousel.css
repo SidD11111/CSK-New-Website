@@ -82,7 +82,7 @@ li {
   perspective: 100px;
   max-width: 37.5rem;
   max-height: 37.5rem;
-  right: 5%;
+  right: 6%;
   bottom: 5%;
   margin-right: -20%;
   overflow-y: hidden;
@@ -348,5 +348,23 @@ li {
     left: -2%
   }
 }
+/* 
+@media (min-width: 1416px) {
+  .carousel {
+    right: 4%
+  }
+}
+
+@media (min-width: 1510px) {
+  .carousel {
+    right: -1%
+  }
+}
+
+@media (min-width: 1650px) {
+  .carousel {
+    right: -5%
+  }
+} */
 
 
