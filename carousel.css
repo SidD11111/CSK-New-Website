@@ -265,6 +265,8 @@ li {
 .descriptionParagraph {
   font-size: 17px;
   margin-top: -20px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .descriptionSection {

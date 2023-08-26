@@ -264,7 +264,7 @@ footer p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
     -10px -10px 20px rgba(255, 255, 255, 0.5);
   position: sticky;
-  z-index: 10000;
+  /* z-index: 10000; */
 }
 
 .btn {
