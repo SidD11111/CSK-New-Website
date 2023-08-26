@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="background.css">
   <link rel="stylesheet" type="text/css" href="carousel.css">
   <link rel="stylesheet" type="text/css" href="laptop.css">
+  <link rel="stylesheet" type="text/css" href="extra.css">
   <link rel="stylesheet" href="calendar.css">
   <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
@@ -69,6 +70,7 @@
         <h1 id='mainText'>CompSci Kids!</h1>
         <p class="hero-description">Introducing youth to the exciting world of coding and computer science.</p>
         <a href="mailto:cskids211@gmail.com" class="btn">Contact Us</a>
+        <li id = "privacyTxt" class="btn personName"></li>
       </div>
     </section>
 
@@ -269,6 +271,7 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/extra.js"></script>
 
   <script>
     function detectIE() {
@@ -346,6 +349,49 @@
     });
 
   </script>
+
+
+
+<script>
+	let founderContainer2 = document.getElementById("privacyTxt")
+	var title2 = "CompSci Kids Privacy Policy";
+	var fileSrc2 = "p.file";
+	var bio2 = "We at CompSci Kids take great care to keep your information secure and confidential. We do not track any website visitors nor do we take any personally identifiable information without one’s consent. The data that we get is provided from users inputting any information when creating an account with us. This data is solely used for information regarding who is participating in CompSci Kids sessions and for contact information, and general information like shirt size and grade level is used to enhance the CompSci Kids experience such as getting T-Shirts and being placed in the appropriate grade level. All data provided is safely secured on our server and sensitive information is highly encrypted. We do not share any information with Conant High School or anyone else.";
+	var founder2 = true;
+	let mainDiv2 = document.createElement("div");
+	mainDiv2.className = "personDiv"
+	let name2 = document.createElement("p");
+	name2.innerHTML = `See Session Info`
+	name2.align = "center"
+	name2.className = "personName"
+
+	let modal2 = document.createElement('div')
+	modal2.className = "modal";
+	let modalContent2 = document.createElement('div')
+	modalContent2.className = "modal-content";
+	let modalHeader2 = document.createElement('H5');
+	modalHeader2.className = 'modal-header';
+	modalHeader2.innerHTML = "Current Session Info";
+	let modalText2 = document.createElement("div");
+	modalText2.id = "headerText";
+	// modalText2.innerHTML = "bio2";
+	let modalButton2 = document.createElement('a');
+	modalButton2.innerHTML = "Close"
+	modalButton2.className = "closeModal";
+
+	mainDiv2.appendChild(name2);
+
+	modalContent2.appendChild(modalHeader2);
+	modalContent2.appendChild(modalText2);
+	modalContent2.appendChild(modalButton2);
+	modal2.appendChild(modalContent2);
+
+	mainDiv2.appendChild(modal2);
+	founderContainer2.appendChild(mainDiv2)
+</script>
+
+
+
   <script>
     console.log('hello')
     $.ajax({
@@ -377,6 +423,8 @@
       }
     })
   </script>
+
+
 </body>
 
 </html>

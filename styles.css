@@ -346,6 +346,11 @@ section h2 {
   font-size: 55px;
 }
 
+h5{
+  font-family: brandFont;
+  text-decoration: none;
+}
+
 section h1 {
   color: var(--color-text);
 }

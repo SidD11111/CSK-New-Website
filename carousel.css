@@ -86,6 +86,7 @@ li {
   bottom: 5%;
   margin-right: -20%;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .carousel__viewport {
@@ -95,8 +96,8 @@ li {
   bottom: 0;
   left: 0;
   display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory; 
