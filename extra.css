@@ -8,12 +8,12 @@
 }
 
 
-.face {
+/* .face {
     width: 15vw;
     height: 15vw;
     object-fit:cover;
     border-radius: 10%;
-}
+} */
 
 #people-container, #founder-container {
 	display: flex;
@@ -219,12 +219,12 @@
 
 @media only screen and (max-width: 980px) {
 
-    .face {
+    /* .face {
         width: 35vw;
         height: 35vw;
         object-fit:cover;
         border-radius: 10%;
-    }
+    } */
 
     .modal-content {
         width: 85%;
